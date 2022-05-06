@@ -498,7 +498,7 @@ hr {
 @media (max-width: 767px) {
     #header {
         display: block;
-        position: unset;
+        position: fixed;
         text-align: center;
     }
 
@@ -530,7 +530,7 @@ hr {
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        padding: 3rem 2rem;
+        padding: 12rem 2rem;
     }
 
     #home .home-writeup {
