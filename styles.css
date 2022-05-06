@@ -1,0 +1,628 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    margin: 0 15%;
+}
+
+.main-home {
+    background: linear-gradient(90deg, rgba(191, 139, 94, 0.5), rgba(242, 233, 206, 0.5));
+    color: #ffffff;
+}
+
+#header {
+    align-items: center;
+    background: linear-gradient(90deg, rgba(191, 139, 94, 1), rgba(242, 233, 206, 1));
+    display: flex;
+    flex: 1 1;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0 15%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 9999;
+}
+
+#header .company-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#header #header-img {
+    width: 6vw;
+}
+
+#nav-bar a {
+    color: hsl(344, 84%, 67%);
+    padding: 0 1.5rem;
+    text-decoration: none;
+}
+
+#nav-bar a:hover {
+    background: hsl(344, 84%, 67%);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 15%;
+}
+
+#home .home-writeup {
+    flex-basis: 20em;
+}
+
+#home .home-writeup h2 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+#home .home-writeup h2 strong {
+    font-weight: 700;
+}
+
+#home .home-writeup p {
+    font-weight: 300;
+    line-height: 2;
+}
+
+#home .home-writeup .order-btn {
+    background: hsl(344, 84%, 67%);
+    border: 2px solid hsl(344, 84%, 67%);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 9px 17px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#home .home-writeup .order-btn:hover {
+    background: hsl(344, 94%, 44%);
+    cursor: pointer;
+    letter-spacing: 2px;
+    
+}
+
+#home .home-images {
+    display: flex;
+    flex-basis: 22em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#home .home-images .strawberry-candle-cake {
+    background: hsl(46, 71%, 83%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: hsl(0, 0%, 5%);
+    padding: 1.5rem 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7vw;
+}
+
+#home .home-images .strawberry-candle-cake h3 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#home .home-images .strawberry-candle-cake p {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 2;
+}
+
+#home .home-images .strawberry-candle-cake .fa-cake-candles {
+    color: hsl(344, 84%, 67%);
+}
+
+#home .home-images .strawberry-candle-cake .price {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+#featured {
+    padding: 3rem 15%;
+}
+
+#featured .featured-heading {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#featured .featured-heading h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+#featured .featured-heading p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#featured .featured-cakes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+    text-align: center;
+    vertical-align: bottom;
+    row-gap: 1rem;
+}
+
+#featured .featured-cakes .strawberry-candle-cake {
+    width: 15vw;
+}
+
+#featured .featured-cakes .strawberry-candle-cake:hover {
+    background: transparent;
+    border: 2px solid hsl(344, 84%, 67%);
+    border-radius: 44%;
+    cursor: pointer;
+    padding: 75px 45px;
+}
+
+#featured .featured-cakes .strawberry-candle-cake .fa-cake-candles {
+    color: hsl(344, 84%, 67%);
+    margin-bottom: 3rem;
+}
+
+#featured .featured-cakes .strawberry-candle-cake h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#featured .featured-cakes .strawberry-candle-cake p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+#featured .featured-cakes .strawberry-candle-cake a {
+    color: hsl(344, 84%, 67%);
+    display: none;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+#featured .featured-cakes .strawberry-candle-cake:hover a {
+    display: inline;
+}
+
+
+#featured .featured-cakes .strawberry-candle-cake a:hover {
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+#about-us {
+    background: hsl(45, 58%, 88%);
+    color: hsl(0, 0%, 5%);
+    display: flex;
+    align-items: center;
+    padding: 3rem 15%;
+    justify-content: space-between;
+    column-gap: 2rem;
+}
+
+#about-us .about-us-cake {
+    width: 45%;
+    flex-basis: 55em;
+}
+
+#about-us .about-us-cake .about-us-cake-image {
+    width: 100%;
+}
+
+#about-us .about-us-info {
+    flex-basis: 60em;
+}
+
+
+#about-us .about-us-info h2 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+#about-us .about-us-info h2 strong {
+    font-weight: 700;
+}
+
+#about-us .about-us-info p {
+    font-weight: 300;
+    line-height: 2;
+    margin-bottom: 3rem;
+}
+
+#about-us .about-us-info .award {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+#about-us .about-us-info .learn-btn {
+    background: transparent;
+    border: 2px solid hsl(28, 43%, 56%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 5%);
+    padding: 9px 17px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#about-us .about-us-info .learn-btn:hover {
+    background: hsl(0, 72%, 38%);
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: 3.5px;
+    
+}
+
+#how-to-bake {
+    padding: 7rem 15%;
+    text-align: center;
+}
+
+#video {
+    max-width: 600px;
+    width: 100%;
+}
+
+#special-offer {
+    color: hsl(0, 0%, 5%);
+    display: flex;
+    align-items: center;
+    padding: 3rem 15%;
+    justify-content: space-between;
+    column-gap: 2rem;
+}
+
+#special-offer .special-offer-details {
+    flex-basis: 60em;
+}
+
+
+#special-offer .special-offer-details h2 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+#special-offer .special-offer-details h2 strong {
+    font-weight: 700;
+}
+
+#special-offer .special-offer-details .special-offer-details-first-paragraph {
+    font-weight: 400;
+}
+
+#special-offer .special-offer-details p {
+    font-weight: 300;
+    line-height: 2;
+}
+
+#special-offer .special-offer-details em {
+    color: hsl(344, 94%, 44%);
+    font-weight: 400;
+}
+
+
+#special-offer .special-offer-cake {
+    width: 45%;
+    flex-basis: 55em;
+}
+
+#special-offer .special-offer-cake .special-offer-cake-image {
+    width: 100%;
+}
+
+#form-section {
+    padding: 3rem 15%;
+    text-align: center;
+}
+
+#form-section #form h2 strong {
+    font-weight: 700;
+}
+
+#form-section #form h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+#form-section #form input[type="email"] {
+    padding: 10px;
+    width: 50%;
+}
+
+#form-section #form input[type="submit"] {
+    background-color: hsl(344, 84%, 67%);
+    border: 2px solid hsl(344, 94%, 44%);
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 1rem;
+    width: 25%;
+}
+
+#form-section #form input[type="submit"]:hover {
+    background: hsl(0, 72%, 38%);
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: 3.5px;
+}
+
+#services {
+    align-items: center;
+    color: hsl(0, 0%, 5%);
+    grid-column-gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 3rem 15%;
+    text-align: center;
+}
+
+#services .services-img {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+#services .services-detail h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#services .services-detail p {
+    font-weight: 300;
+    line-height: 2;
+}
+
+#partners {
+    color: hsl(0, 0%, 5%);
+    padding: 3rem 15%;
+}
+
+#partners .partners-heading {
+    text-align: center;
+}
+
+#partners .partners-heading h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+#partners .partners-heading p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.partners-logos {
+    align-items: center;
+    column-gap: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.7rem;
+}
+
+.partners-logos .partner1 {
+    flex-basis: 30em;
+}
+
+.partners-logos .partner2 {
+    flex-basis: 30em;
+}
+
+.partners-logos .partner3 {
+    flex-basis: 30em;
+}
+
+.partners-logos .partner4 {
+    flex-basis: 30em;
+}
+
+.partners-logos .partner5 {
+    flex-basis: 20em;
+}
+
+.partners-logos .partners-logo {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+#special-offer {
+    background: linear-gradient(90deg, rgba(191, 139, 94, 0.5), rgba(242, 233, 206, 0.5));
+}
+
+.bottom-details {
+    align-items: flex-start;
+    background: hsl(45, 58%, 88%);
+    column-gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 15%;
+}
+
+.bottom-details h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.bottom-details h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.bottom-details p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (max-width: 767px) {
+    #header {
+        display: block;
+        position: unset;
+        text-align: center;
+    }
+
+    #header .company-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header #header-img {
+        width: 10vw;
+    }
+
+    #header #nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header #nav-bar a {
+        padding: .3rem 0;
+    }
+
+    #header #nav-bar a:hover {
+        padding: 12px 20px;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3rem 2rem;
+    }
+
+    #home .home-writeup {
+        flex-basis: 20em;
+        text-align: center;
+    }
+    
+    #home .home-images {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        vertical-align: bottom;
+    }
+
+    #home .home-images .strawberry-candle-cake {
+        width: 65vw;
+    }
+
+    #featured .featured-cakes, #services {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        vertical-align: bottom;
+    }
+
+    #featured .featured-cakes .strawberry-candle-cake, #services .services-detail {
+        width: 65vw;
+    }
+
+    #featured .featured-cakes .strawberry-candle-cake:hover {
+        background: transparent;
+        border: 2px solid hsl(344, 84%, 67%);
+        border-radius: 44%;
+        cursor: pointer;
+        padding: 15px 15px;
+    }
+
+    #featured .featured-cakes .strawberry-candle-cake .fa-cake-candles {
+        margin-bottom: 1rem;
+    }
+
+    #about-us, #special-offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 15%;
+        justify-content: center;
+    }
+
+    #about-us .about-us-cake, #special-offer .special-offer-cake {
+        width: 100%;
+        flex-basis: 0;
+    }
+
+    #about-us .about-us-info, #special-offer .special-offer-details {
+        text-align: center;
+        flex-basis: 0;
+    }
+
+    #form-section {
+        padding: 0 3%;
+    }
+
+    .partners-logos {
+        align-items: center;
+        column-gap: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .partners-logos .partner1, .partner2, .partner3, .partner4, .partner5 {
+        flex-basis: 0;
+    }
+    
+    .partners-logos .partners-logo {
+        width: 42vw;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .bottom-details {
+        align-items: flex-start;
+        column-gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 15%;
+    }
+
+}
