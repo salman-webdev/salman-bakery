@@ -601,10 +601,13 @@ hr {
     }
 
     .partners-logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
         align-items: center;
-        column-gap: 1rem;
-        display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        text-align: center;
+        vertical-align: bottom;
     }
 
     .partners-logos .partner1, .partner2, .partner3, .partner4, .partner5 {
@@ -612,7 +615,7 @@ hr {
     }
     
     .partners-logos .partners-logo {
-        width: 42vw;
+        width: 12vw;
         max-width: 100%;
         height: auto;
     }
